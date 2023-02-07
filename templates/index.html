@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Rate My Trash 🔥</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@200&display=swap"> 
+    <!--<link rel="stylesheet" href="/css/style.css">-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+    <base target="_blank">
+</head>
+
+<body>
+
+    <h1 id="h-title">Spring Room <br> (Re)organization</h1>
+
+    <span id="nav-bar">
+        <a onclick="$.scrollTo('#overview')">Overview</a>
+        <a onclick="$.scrollTo('#gallery', 'fast')">Gallery</a>
+        <a onclick="$.scrollTo('#item-data', 'slow')">Item Data</a>
+        <a onclick="$.scrollTo('#coda', 'slow')">Coda</a>
+        <a onclick="$.scrollTo('#about', 'slow')">About</a>
+    </span>
+
+    <h2 id="overview">Overview</h2>
+
+    <p>
+        I decided to log some of my trash to reflect upon my possible wasting of resources; 
+        a corner people often unknowingly place themselves in where they discard items, 
+        oblivious to their possible use after being recycled. 
+    </p>
+
+    <h3 id="h-genre-1">Convenience</h3>
+
+    <p>
+        Some of my items fall into a group of nonnecessities that are only primarily used to 
+        enlighten my livelihood. These include salt spray to better control my long hair, 
+        <a href='https://www.shorturl.at/mvyF6'>earbuds</a> to listen to music or audio in noisy areas and better focus, <a href='https://en.wikipedia.org/wiki/Disposable_tableware'>plastic utensils</a> 
+        so I can avoid eating with my fingers, and over-the-counter <a href='https://en.wikipedia.org/wiki/Paracetamol'>painkillers</a> for that 
+        occasional headache. I restock my <a href='https://en.wikipedia.org/wiki/Hair_spray'>salt spray monthly</a> and am a fan of the volume it 
+        adds to my hair. I almost never replace my earbuds - the ones pictured are a secondary 
+        pair where the bud I have doesn't work and the other I lost - and was surprised to 
+        notice my ibuprofen was expired.
+    </p>
+
+    <h3 id="h-genre-2">Necessities</h3>
+
+    <p>
+        Other items are human necessities whose lifespan and use ran out and should be replaced. 
+        These are the fairly useless apple core and <a href='https://en.wikipedia.org/wiki/Banana_peel'>banana peel</a> and face mask, the latter being 
+        safe to be considered a necessity for some locations in this current time period. I enjoy 
+        these fruits daily and wear masks where required, i.e. in healthcare settings. I have 
+        many memorable moments devouring bananas after my cross country races, they're actually 
+        some pretty good motivation to finish faster!
+    </p>
+
+    <h3 id="h-genre-3">Wellness</h3>
+
+    <p>
+        My final two items; a Nike sock with holes beyond repair (can't be donated), and 
+        receipt from prescription toothpaste fall into the common category of improving my 
+        health and wellbeing. The former obviously aids in day-to-day walking and traveling 
+        alongside exercise and running. The toothpaste (extra fluoride) tries to deal with 
+        my poor dental genetics to keep my teeth in pristine condition. I only purchase 
+        identical pairs of socks and was surprised one of them lasted long enough to develop 
+        holes, I usually find myself having socks constantly disappearing on me…
+    </p>
+
+    <h2 id="gallery">Gallery</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 25%); justify-content: center; gap: 8px;">
+        <img src="{{url_for('static', filename='img/apple.jpg')}}">
+        <img src="{{url_for('static', filename='img/banana.jpg')}}">
+        <img src="{{url_for('static', filename='img/earbuds.jpg')}}">
+        <img src="{{url_for('static', filename='img/fork.jpg')}}">
+        <img src="{{url_for('static', filename='img/mask.jpg')}}">
+        <img src="{{url_for('static', filename='img/pain.jpg')}}">
+        <img src="{{url_for('static', filename='img/receipt.jpg')}}">
+        <img src="{{url_for('static', filename='img/salt.jpg')}}">
+        <img src="{{url_for('static', filename='img/sock.jpg')}}">
+    </div>
+
+    <h2 id="item-data">Item Data</h2>
+
+    <div style="display: flex; justify-content: center;">
+
+        <table>
+
+            <tr>
+                <th>Item</th>
+                <th>Weight</th>
+                <th>Location</th>
+                <th>Cost</th>
+                <th>Owned</th>
+                <th>Disposal</th>
+            </tr>
+
+            <tr>
+                <td>Salt spray</td>
+                <td>< 9 oz</td>
+                <td>Shelf</td>
+                <td>~$3</td>
+                <td>Several weeks</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Painkiller</td>
+                <td>~6 oz</td>
+                <td>Shelf</td>
+                <td>~$6</td>
+                <td>Several years</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Unusable sock</td>
+                <td>~4 oz</td>
+                <td>Sock drawer</td>
+                <td>~$2</td>
+                <td>Unknown</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Broken earbuds</td>
+                <td>Light</td>
+                <td>Moves around</td>
+                <td>~$3</td>
+                <td>Several months</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Apple core</td>
+                <td>~ 4 oz</td>
+                <td>Snatched from dining hall</td>
+                <td>~$18/swipe, so probs $1.</td>
+                <td>Several hours</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Banana peel</td>
+                <td>~ 4 oz</td>
+                <td>Snatched from dining hall</td>
+                <td>~$18/swipe, so probs $1.</td>
+                <td>Several hours</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Receipt</td>
+                <td>Paper-light</td>
+                <td>Wallet</td>
+                <td>N/A</td>
+                <td>A week?</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Plastic fork</td>
+                <td>Fairly light</td>
+                <td>Silverware bin</td>
+                <td>Several cents</td>
+                <td>Less than a year</td>
+                <td>Trash</td>
+            </tr>
+
+            <tr>
+                <td>Face mask</td>
+                <td>Light enough to wear on face for hours</td>
+                <td>Mask box</td>
+                <td>Several cents</td>
+                <td>Many months</td>
+                <td>Trash</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <h3 id="h-top-3-items">Top Three Items</h3>
+
+    <ul>
+        <li>Banana peel</li>
+        <li>Apple core</li>
+        <li>Old sock</li>
+    </ul>
+
+    <h3 id="h-top-3-lightest">Top Three Lightest Items</h3>
+
+    <ol>
+        <li>Receipt</li>
+        <li>Face mask</li>
+        <li>Plastic fork</li>
+    </ol>
+
+    <h2 id="coda">Coda</h2>
+
+    <p>That's all folks!</p>
+
+    <h2 id="about">About Happy John</h2>
+
+    <p>
+        Hey! I'm Happy John and am a sophomore CS major living on CA. I deeply enjoy running (ran cross country for nine years) 
+        and especially trail running, with a New Year's resolution of running 2,023 miles this year. Living on a mountain 
+        surrounded by forest definitely contributed to this hobby. :) I am very knowledgable with web application development,
+        including having experience with HTML, raw CSS, JS, Python 3, Flask, Sanic, Jinja2, Requests, bs4, Git, Heroku, Mongo,
+        Railway, etc.! Currently learning Tailwind, Quart, Julia (Genie.jl), and Elastic Beanstalk!
+    </p>
+
+    <button id="btn-top" onclick="$.scrollTo('html', 'fast')" style="cursor: pointer;">Back to top</button>
+
+    <style>
+
+        :root { 
+            --background-col: rgb(36, 36, 49);
+            --prim-text-col: white;
+            --second-text-col: rgb(225, 225, 225);
+            --table-head-back-col: rgb(83, 66, 109);
+            --border-col: rgb(105, 105, 105);
+            --hyperlink-dark: rgb(107, 200, 237);
+            font-family: Arial, sans-serif; /* backup fonts */
+        }
+
+        body { 
+            padding: 2vw; 
+            font-family: Montserrat;
+            background-color: var(--background-col); 
+            color: var(--prim-text-col);        
+        }
+
+        #nav-bar {
+            display: flex; 
+            justify-content: space-around; 
+            border: 1px solid var(--second-text-col); 
+            border-right: 0; 
+            border-left: 0;
+        }
+
+        #nav-bar > a {
+            font: 1.2rem Poppins;
+            text-align: center; 
+            width: 100%;
+            transition: 0.1s ease-in-out;
+            cursor: pointer;
+        }
+
+        #nav-bar > a:hover { color: var(--background-col); background-color: var(--second-text-col); }
+
+        img { width: 100%; height: auto;}
+
+        h1, h2, div { color: var(--prim-text-col); text-align: center;}
+
+        p { color: var(--second-text-col); font-size: 1.2rem;}
+        a:link, a:visited { color: var(--hyperlink-dark);}
+
+        table { font: 1.05rem Poppins; border-collapse: collapse;} /* border-spacing: 0 */
+        table, tr > * { border: 1px solid var(--border-col);}
+        tr > * { padding: 5px;}
+        th { background-color: var(--table-head-back-col);}
+
+        #btn-top { /* inherit back col white */
+            position: fixed;
+            inset: auto 0 0 auto;
+            padding: 5px;
+            font: 1.2rem Montserrat;
+            color: var(--background-col);
+            border: 2px solid var(--second-text-col);
+            border-style: solid;
+            border-top-left-radius: 10px;
+            transition: 0.1s;
+        }
+
+    </style>
+
+</body>
+
+</html>
