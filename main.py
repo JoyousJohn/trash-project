@@ -15,7 +15,7 @@ if __name__ == '__main__':
     cherrypy.config.update({
 
         'server.socket_host': '0.0.0.0',
-        'server.socket_port': os.getenv("PORT", 8080),
+        'server.socket_port': int(os.getenv("PORT", 8080)),
         
     })
 
