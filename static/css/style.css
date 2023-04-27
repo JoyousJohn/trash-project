@@ -1,7 +1,7 @@
 :root { 
-    --background-col: rgb(36, 36, 49);
+    --background-col: rgb(36, 36, 45);
     --prim-text-col: white;
-    --second-text-col: rgb(225, 225, 225);
+    --second-text-col: rgb(238, 238, 238);
     --table-head-back-col: rgb(83, 66, 109);
     --border-col: rgb(105, 105, 105);
     --hyperlink-dark: rgb(107, 200, 237);
@@ -9,7 +9,6 @@
 }
 
 body { 
-    padding: 2vw; 
     font-family: Montserrat;
     background-color: var(--background-col); 
     color: var(--prim-text-col);        
@@ -37,7 +36,7 @@ img { width: 100%; height: auto;}
 
 h1, h2, div { color: var(--prim-text-col); text-align: center;}
 
-p { color: var(--second-text-col); font-size: 1.2rem;}
+p { color: var(--second-text-col); font-size: 1.3rem; line-height: 1.57; }
 a:link, a:visited { color: var(--hyperlink-dark);}
 
 table { font: 1.05rem Poppins; border-collapse: collapse;} /* border-spacing: 0 */

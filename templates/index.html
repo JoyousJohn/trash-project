@@ -15,7 +15,9 @@
     <base target="_blank">
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; width: 100%; padding: 0; margin: 0;">
+
+    <article style="max-width: 65%;">
 
     <h1 id="h-title">Week 57 <br> Spring Room <br> (Re)organization</h1>
 
@@ -40,7 +42,7 @@
     <p>
         Some of my items fall into a group of nonnecessities that are only primarily used to 
         enlighten my livelihood. These include salt spray to better control my long hair, 
-        <a href='https://www.shorturl.at/mvyF6'>earbuds</a> to listen to music or audio in noisy areas and better focus, <a href='https://en.wikipedia.org/wiki/Disposable_tableware'>plastic utensils</a> 
+        <a href='https://www.aliexpress.com/w/wholesale-wireless-earbuds.html'>earbuds</a> to listen to music or audio in noisy areas and better focus, <a href='https://en.wikipedia.org/wiki/Disposable_tableware'>plastic utensils</a> 
         so I can avoid eating with my fingers, and over-the-counter <a href='https://en.wikipedia.org/wiki/Paracetamol'>painkillers</a> for that 
         occasional headache. I restock my <a href='https://en.wikipedia.org/wiki/Hair_spray'>salt spray monthly</a> and am a fan of the volume it 
         adds to my hair. I almost never replace my earbuds - the ones pictured are a secondary 
@@ -73,7 +75,7 @@
 
     <h2 id="gallery">Gallery</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 25%); justify-content: center; gap: 8px;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; gap: 8px;">
         <img src='/img/apple.jpg'>
         <img src='/img/banana.jpg'>
         <img src='/img/earbuds.jpg'>
@@ -203,16 +205,33 @@
 
     <h2 id="coda">Coda</h2>
 
-    <p>
+    <p style="margin-bottom: 30px;">
         Sharing information about the items you disposed of and recycled this week is a positive step towards promoting sustainability and environmental 
         awareness. By recycling, you are helping to conserve natural resources and reduce waste in landfills. Remember that even small actions 
         can make a big impact on the environment. Consider exploring other sustainable practices to further minimize your ecological footprint. 
         Together, we can make a difference in creating a healthier planet for all.
+    </p><br>
+
+    <h2 style="margin: 0;">Bogost</h2>
+
+    <p>
+        Bogost's analysis of ontography states that it's used as a tool to reveal the fundamental connections between objects that exist in the world beyond human perception. It is a way of highlighting the importance of the things themselves, rather than just the ideas we have about them, that "ontography involves the revelation of object relationships without necessarily offering clarification or description of any kind" (38). Ontography is often presented in the form of a list of objects that are loosely joined together, without any specific logic or order. These lists are used as a way of emphasizing the plurality and diversity of the world, and the ways in which things are connected to each other in unexpected and surprising ways. 
+        
+        <br><br>
+        
+        Bogost's metaphorical summary, when referring to images, that "ontographically speaking, an image tells us nothing about the perception of milk on plastic, seed on bun. It simply catalogs, like the monk's bestiary, exemplifying the ways that human intervention can never entirely contain the mysterious alien worlds of objects" (50) is an excellent conclusion to this thoughtful word, implying that images can only provide a limited representation of the world, just as a bestiary would provide only a simplified and often fantastical depiction of real animals; that the world of objects will always be somewhat enigmatic and "alien" to human comprehension, and that any attempts made to properly portray its complexity through images or other means would always fall short.
+
+        <br><br>
+
+        I implicitly used this philosophy when sorting the above, seemingly unconnected, images into groups that were not based on conventional categories, but rather on their underlying properties and relations. By focusing on the characteristics that these images shared, such as their usage, purpose, and significance of their existence, instead of qualities such as shape, color and texture, I was able to create meaningful clusters that reflected their ontological nature, rather than their superficial appearances. 
+
     </p>
 
     <span style="display: inline-block; width: 100%; text-align: center; font-size: 1.3rem;">That's all folks!</span>
 
-    <h2 id="about">About Happy John</h2>
+    <h2 id="about" style="margin-bottom: 0;">About Happy John</h2>
+
+    <span style="display: block; text-align: center; width: 100%;"><a style="font: 20px Arial; color: rgb(114, 114, 207); text-decoration: underline;" href="https://www.johnhappy.me" target="_blank">www.johnhappy.me</a></span>
 
     <p>
         Hey! I'm Happy John and am a sophomore CS major living on CA. I deeply enjoy running (ran cross country for nine years) 
@@ -221,6 +240,8 @@
         including having experience with HTML, raw CSS, JS, Python 3, Flask, Sanic, Jinja2, Requests, bs4, Git, Heroku, Mongo,
         Railway, etc.! Currently learning Tailwind, Quart, Julia (Genie.jl), and Elastic Beanstalk!
     </p>
+
+    </article>
 
     <button id="btn-top" onclick="$.scrollTo('html', 'fast')" style="cursor: pointer;">Back to top</button>
 
